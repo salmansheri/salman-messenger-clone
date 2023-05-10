@@ -10,7 +10,7 @@ interface UsersLayoutProps {
 
 const UsersLayout = async ({ children }: UsersLayoutProps) => {
   const currentUser = await getCurrentUser();
-  console.log(currentUser);
+ 
   const users = await getUsers();
 
   return (

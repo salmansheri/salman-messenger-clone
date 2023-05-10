@@ -13,9 +13,9 @@ const ConversationPage = async ({params}: {params: IParams}) => {
     const { conversationId } = params; 
 
     const conversation = await getConversationById(conversationId as string)
-    console.log("conversation", conversation)
+  
     const messages = await getMessages(conversationId as string)
-    console.log("messages", messages)
+   
 
     if(!conversation) {
         return (
